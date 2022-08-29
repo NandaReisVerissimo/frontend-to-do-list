@@ -1,9 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -25,12 +24,14 @@ h1 {
     text-transform: uppercase;
 }
 
-h1, p {
+h1,
+p {
     color: #fff;
     text-align: center;
 }
+
 .botao {
-    background-color:  #32cdac;
+    background-color: #32cdac;
     padding: 10px;
     border: none;
     flex: 1;
@@ -60,7 +61,7 @@ h1, p {
     list-style: none;
 }
 
-#lista > li {
+#lista>li {
     background-color: #dbdbdb;
     width: 100%;
     padding: 8px;
@@ -94,4 +95,9 @@ h1, p {
     color: #0f1726;
     border-radius: 4px;
     margin-top: 30px;
+}
+
+.concluida span {
+    text-decoration: line-through;
+    color: #a9a9a9;
 }
