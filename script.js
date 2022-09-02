@@ -9,9 +9,8 @@ function adicionarTarefa() {
     item.id = idTarefa 
 
     item.innerHTML = `
-        <span onclick="concluir"(${idTarefa})">${inputTarefa.value}</span>
-        <button class = "concluida" onclick = "concluida (event)">Concluida</button>
-        <button class="excluir" onclick="excluir(event)">x</button>`;
+        <span class = "pronto" onclick="concluir"(${idTarefa})">${inputTarefa.value}</span>
+        <button class="excluir" onclick="excluir()">x</button>`;
 
        const lista = document.querySelector("#lista");
 
@@ -45,9 +44,3 @@ function excluir (itemId) {
     const item = document.querySelector("li");
     item.remove ()
 }
-
-const botaoExcluir = document.querySelector (".excluir")
-
-botaoExcluir.addEventListener ("click", excluir)
-
-
